@@ -1,0 +1,17 @@
+[package]
+name = "backtest-worker"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+backtest-alignment = { path = "../../crates/alignment" }
+backtest-dataset = { path = "../../crates/dataset" }
+backtest-engine-adapter = { path = "../../crates/engine-adapter" }
+backtest-market-data = { path = "../../crates/market-data" }
+csv = "1.4.0"
+serde_json = "1.0.145"

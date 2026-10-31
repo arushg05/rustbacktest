@@ -1,0 +1,13 @@
+[package]
+name = "backtest-alignment"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+backtest-market-data = { path = "../market-data" }
+backtest-signal = { path = "../signal" }
+
+[lints]
+workspace = true

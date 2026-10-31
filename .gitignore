@@ -1,0 +1,9 @@
+**/target/
+/data/
+/.venv/
+__pycache__/
+**/*.rs.bk
+.env
+.env.*
+!.env.example
+

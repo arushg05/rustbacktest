@@ -1,0 +1,28 @@
+[workspace]
+resolver = "2"
+members = [
+  "apps/api-server",
+  "apps/backtest-worker",
+  "crates/alignment",
+  "crates/analytics",
+  "crates/api",
+  "crates/dataset",
+  "crates/engine-adapter",
+  "crates/market-data",
+  "crates/signal",
+]
+
+[workspace.package]
+edition = "2024"
+rust-version = "1.85"
+license = "UNLICENSED"
+
+[workspace.lints.rust]
+unsafe_code = "deny"
+missing_debug_implementations = "deny"
+
+[workspace.lints.clippy]
+dbg_macro = "warn"
+todo = "warn"
+unimplemented = "warn"
+unwrap_used = "warn"
